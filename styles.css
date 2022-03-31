@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -14,6 +14,19 @@ body {
     background-color: #fff;
     width: 80%;
     margin: auto;
+}
+
+#skip {
+    position: absolute;
+    transform: translateY(-150%);
+    padding: .9rem;
+    transition: transform 300ms ease-in;
+}
+
+#skip:focus {
+    background-color: white;
+    text-decoration: none;
+    transform: translateY(0%);
 }
 
 #navigation {
@@ -37,6 +50,7 @@ nav li a {
     color: hsl(0, 0%, 100%);
     text-decoration: none;
     padding: 5px 30px;
+    font-size: 1.1rem;
 }
 
 nav a:hover {
@@ -48,19 +62,20 @@ nav a:hover {
 #heading {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 h1 {
-    margin: 1.2rem 0;
+    margin: 1.2rem 0 0 0;
 }
 
 #subhead {
-    text-align: center;
+    font-style: italic;
+    font-size: .8rem;
 }
 
 #top-container {
     display: flex;
-    text-align: center;
 }
 
 #top-left {
@@ -73,25 +88,159 @@ img {
     height: 10%;
 }
 
+h2, h3 {
+    text-align: center;
+}
+
 #samples {
     display: flex;
     flex-direction: column;
-    margin-top: 5%;
+    margin-top: 1rem;
     margin-left: 20%;
     margin-right: 20%;
 }
 
 #planning {
-    margin: 5% 20% 2% 20%;
+    margin: 1rem 20% 2% 20%;
 }
 
 #planning h3 {
     margin-top: 3%;
 }
 
+
+form {
+    background-color: rgba(218, 163, 218, 0.185);
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 1rem;
+    padding-bottom: 1.1rem;
+}
+
+fieldset {
+    margin-top: 15px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+fieldset input {
+    margin: 5px 0px;
+    text-align: left;
+}
+
+span {
+    color: darkred;
+    font-size: .8rem;
+}
+
+.input {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+input:focus {
+    background-color: #4d4def25;
+}
+
+.star {
+    text-align: right;
+}
+
+button {
+    align-items: center;
+}
+
+#reset {
+    background-color: #fff;
+    color: #000;
+    width: 30%;
+}
+
+#reset:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+#submit {
+    background-color: #0000ff;
+    color: white;
+    width: 30%;
+}
+
+#submit:hover {
+    background-color: #3840aa;
+    cursor: pointer;
+}
+
+#appointment {
+    margin: .5rem;
+}
+
+#table {
+    border-collapse: collapse;
+    margin: 0 auto 1.2rem auto;
+    width: 30%
+}
+
+caption {
+    margin-top: 25px;
+    font-weight: bold;
+    border: 1px solid black;
+    font-size: 18px;
+    padding: 10px;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 10px 15px;
+}
+
+.row .hours {
+    width: 30%;
+}
+
 #footer {
-    text-align: center;
     background-color: #000;
     color: #fff;
-    padding: 20px mjj;
+    padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    #wrapper {
+        width: 95%;
+    }
+
+    nav {
+        background-color: #000;
+        position: relative;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        padding: 5px 0px;
+    }
+
+    #top-container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    #table {
+        border-collapse: collapse;
+        margin: auto;
+        width: 90%
+    }
 }
