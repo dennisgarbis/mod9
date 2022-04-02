@@ -19,8 +19,9 @@ body {
 }
 
 header {
-    background-color: #440C40;
-    color: white;
+    background-color: #F9EAE7;
+    padding: .8rem;
+    border-bottom: thin solid black;
 }
 
 h1 {
@@ -31,7 +32,7 @@ h1 {
 
 #skip {
     position: absolute;
-    transform: translateY(-250%);
+    transform: translateY(-450%);
     padding: .9rem;
     transition: transform 300ms ease-in;
     background-color: white;
@@ -43,25 +44,32 @@ h1 {
     transform: translateY(0%);
 }
 
+#hero {
+    width: 100%;
+    padding: 0%;
+}
+
 #navigation {
     display: none;
 }
 
 nav {
-    background-color: #000;
+    background-color: #F9EAE7;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    margin-top: -.2rem;
 }
 
 .nav-links {
     display: flex;
     justify-content: space-around;
     padding: .8rem 1.2rem;
+    list-style: none;
+    font-weight: bold;
 }
 
 nav li a {
-    color: hsl(0, 0%, 100%);
     text-decoration: none;
     padding: .5rem 1.9rem;
     font-size: 1.1rem;
@@ -73,6 +81,10 @@ nav a:hover {
     border-radius: 1.2rem;
 }
 
+nav a:visited {
+    color: black;
+}
+
 #subhead {
     font-style: italic;
     font-size: .8rem;
@@ -81,47 +93,64 @@ nav a:hover {
 
 #top-container {
     display: flex;
-}
-
-#top-left {
-    background-color: rgba(196, 225, 235, 0.289);
+    background-color: #f9f3e7;
 }
 
 img {
-    width: 100%;
+    width: 60%;
     height: auto;
+    padding: .5rem;
 }
 
 h2, h3 {
     text-align: center;
 }
 
+#top-left h2 {
+    margin-bottom: .6rem;
+}
+#text {
+    background-color:white;
+}
 #samples {
     display: flex;
     flex-direction: column;
-    margin-top: 1rem;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin: 1rem auto;
+    width: 50%;
+    background-image: url(lace.jpg);
+    padding: 1rem 2rem;
+}
+
+#samples p {
+    padding: 1rem;
+
 }
 
 #planning {
-    margin: 1rem 20% 2% 20%;
+    margin: 1rem auto;
+    width: 50%;
+}
+
+#bottom-container {
+    display: flex;
+    justify-content: space-evenly;
+    background-color:#F9EAE7
 }
 
 form {
-    background-color: white;
-    margin-top: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    padding-top: 1rem;
-    padding-bottom: 1.1rem;
+    background-color: #fff;
+    padding: 1rem;
     border: thin solid black;
+    margin: 1rem;
+}
+
+form hr {
+    margin-bottom: .8rem;
 }
 
 fieldset {
     margin-top: 1rem;
-    width: 50%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -139,7 +168,7 @@ span {
 .input {
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 90%;
 }
 
 input:focus {
@@ -150,8 +179,8 @@ input:focus {
     text-align: right;
 }
 
-button {
-    margin-left: 12%;
+#buttons {
+    text-align: center;
 }
 
 #reset {
@@ -177,14 +206,14 @@ button {
     cursor: pointer;
 }
 
-#appointment {
-    margin: .5rem;
+#operation {
+    margin: 1rem;
 }
 
 #table {
     border-collapse: collapse;
     margin: 0 auto 1.2rem auto;
-    width: 30%
+    background-color: #Fff;
 }
 
 caption {
@@ -193,8 +222,7 @@ caption {
     border: 1px solid black;
     font-size: 18px;
     padding: 10px;
-    background: #440C40;
-    color: white;
+    background: #Fff;
 }
 
 td, th {
@@ -221,7 +249,6 @@ td, th {
     }
 
     nav {
-        background-color: #000;
         position: relative;
     }
 
@@ -238,11 +265,26 @@ td, th {
         flex-direction: column-reverse;
     }
 
+    #samples {
+        width: 90%;
+        margin: 5% auto;
+    }
+
+    #planning {
+        width: 90%;
+        margin: 5% auto;
+    }
+
     img {
         width: 50%;
         margin-left: auto;
         margin-right: auto;
     }
+
+    #bottom-container {
+        flex-direction: column;
+    }
+
     form {
         width: 90%;
     }

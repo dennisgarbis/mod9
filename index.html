@@ -12,13 +12,13 @@
 <body>
       <div id="wrapper">
             <header aria-label="banner">
-                        <h1>Wedding Bell Bridal Salon</h1>
-                        <p id="subhead">Wedding Bells is your one-stop shop for all your bridal needs.
-                        </p>
-                 
-            </header>
-            <nav aria-label="navigation">
+                  <h1>Wedding Bell Bridal Salon</h1>
+                  <p id="subhead">Wedding Bells is your one-stop shop for all your bridal needs.
+                  </p>
                   <a id="skip" href="#footer">skip to content..</a>
+            </header>
+            <img id="hero" src="bride-hero2.jpg" alt="bride standing outside with bouquet">
+            <nav aria-label="navigation">
                   <h2 id="navigation">Links</h2>
                   <ul class="nav-links">
                         <li><a href="#">Gowns</a></li>
@@ -31,84 +31,93 @@
                   <div id="top-container">
                         <div id="top-left">
                               <section id="samples" aria-label="designer samples">
-                                    <h2>Designer Samples</h2>
-                                    <p>New designer sample gowns have arrived from premier bridal salons across the
-                                          country.
-                                          The
-                                          gowns
-                                          typically retail between $3,000 and $5,000 but at Wedding Bell they are
-                                          offered at
-                                          $1,200
-                                          to
-                                          $2,000. Of course, we do Economically priced sample gowns start at about $500.
-                                          <b>Veils & Accessories</b>
-                                          Looking for a veil at the last minute? We have plain edged veils in stock.
-                                    </p>
-                              </section>
-                              <section id="planning" aria-label="planning">
-                                    <h2>Wedding Planning</h2>
-                                    <p>Don't worry -- we'll plan your perfect wedding. No matter what your style or
-                                          budget.
-                                    </p>
-                              </section>
-                              <section aria-label="form">
-                                    <form action="https://www.davidsbridal.com/" method="post">
-                                          <h3>Contact us for a consultation today</h3>
-                                          <div class="input">
-                                                <div>
-                                                      <label for="firstname">First Name: <span>*</span></label><br>
-                                                      <input type="text" name="firstname" id="firstname" required
-                                                            aria-required="true">
-                                                </div>
-                                                <div>
-                                                      <label for="lastname">Last Name: <span>*</span></label><br>
-                                                      <input type="text" name="lastname" id="lastname" required
-                                                            aria-required="true">
-                                                </div>
-                                                <div>
-                                                      <label for="emailAddress">Email: <span>*</span></label><br>
-                                                      <input type="email" name="emailAddress" id="emailAddress" required
-                                                            aria-required="true">
-                                                </div>
-                                                <div>
-                                                      <label for="phoneNumber">Phone Number: <span>*</span></label><br>
-                                                      <input type="number" name="phoneNumber" id="phoneNumber" required
-                                                            aria-required="true">
-                                                </div>
-                                          </div>
-                                          <fieldset aria-label="group">
-                                                <legend>How should we contact you?</legend>
-                                                <div>
-                                                      <div>
-                                                            <input type="radio" name="hear" id="email" value="email">
-                                                            <label for="email">Email</label>
-                                                      </div>
-                                                      <div>
-                                                            <input type="radio" name="hear" id="phone" value="phone">
-                                                            <label for="phone">Phone</label>
-                                                      </div>
-                                                      <div>
-                                                            <input type="radio" name="hear" id="noContact"
-                                                                  value="noContact">
-                                                            <label for="noContact">Do not contact</label>
-                                                      </div>
-                                                </div>
-                                          </fieldset>
-                                          <br>
+                                    <div id="text">
+                                          <h2>Designer Samples</h2>
+                                          <p>New designer sample gowns have arrived from premier bridal salons across
+                                                the
+                                                country.
+                                                The
+                                                gowns
+                                                typically retail between $3,000 and $5,000 but at Wedding Bell they are
+                                                offered at
+                                                $1,200
+                                                to
+                                                $2,000. Of course, we do Economically priced sample gowns start at about
+                                                $500.
+                                                <b>Veils & Accessories</b>
+                                                Looking for a veil at the last minute? We have plain edged veils in
+                                                stock.
+                                          </p>
 
-                                          <p class="star"><span>* indicates required</span></p>
-                                          <button id="reset" type="reset" aria-label="resetbutton">Reset</button>
-                                          <button id="submit" type="submit" aria-label="submitbutton">Submit</button>
-                                    </form>
+                                          <h2>Wedding Planning</h2>
+                                          <p>Don't worry -- we'll plan your perfect wedding. No matter what your style
+                                                or
+                                                budget.
+                                          </p>
+                                    </div>
                               </section>
                         </div>
                         <div id="top-right">
                               <img src="bride2.jpg" alt="bride looking at bouquet">
                         </div>
                   </div>
+                  <hr>
                   <div id="bottom-container">
-                        <section aria-label="hours">
-                              <h2 id="appointment">Make an Appointment</h2>
+                        <section id="form" aria-label="form">
+                              <form action="https://www.davidsbridal.com/" method="post">
+                                    <h3>Contact us for a consultation today</h3>
+                                    <hr>
+                                    <div class="input">
+                                          <div>
+                                                <label for="firstname">First Name:
+                                                      <span>*</span></label><br>
+                                                <input type="text" name="firstname" id="firstname" required
+                                                      aria-required="true">
+                                          </div>
+                                          <div>
+                                                <label for="lastname">Last Name: <span>*</span></label><br>
+                                                <input type="text" name="lastname" id="lastname" required
+                                                      aria-required="true">
+                                          </div>
+                                          <div>
+                                                <label for="emailAddress">Email: <span>*</span></label><br>
+                                                <input type="email" name="emailAddress" id="emailAddress" required
+                                                      aria-required="true">
+                                          </div>
+                                          <div>
+                                                <label for="phoneNumber">Phone Number:
+                                                      <span>*</span></label><br>
+                                                <input type="number" name="phoneNumber" id="phoneNumber" required
+                                                      aria-required="true">
+                                          </div>
+                                    </div>
+                                    <fieldset aria-label="group">
+                                          <legend>How should we contact you?</legend>
+                                          <div>
+                                                <div>
+                                                      <input type="radio" name="hear" id="email" value="email">
+                                                      <label for="email">Email</label>
+                                                </div>
+                                                <div>
+                                                      <input type="radio" name="hear" id="phone" value="phone">
+                                                      <label for="phone">Phone</label>
+                                                </div>
+                                                <div>
+                                                      <input type="radio" name="hear" id="noContact" value="noContact">
+                                                      <label for="noContact">Do not contact</label>
+                                                </div>
+                                          </div>
+                                    </fieldset>
+                                    <br>
+
+                                    <p class="star"><span>* indicates required</span></p>
+                                    <div id="buttons">
+                                          <button id="reset" type="reset" aria-label="resetbutton">Reset</button>
+                                          <button id="submit" type="submit" aria-label="submitbutton">Submit</button>
+                                    </div>
+                              </form>
+                        </section>
+                        <section id="operation" aria-label="hours">
                               <table id="table">
                                     <caption>
                                           <h3>Hours of Operation:</h3>
