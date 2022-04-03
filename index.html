@@ -5,6 +5,8 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Wedding Bell Bridal Salon, located in Palatine, IL, offering the best and most modern bridal gowns around">
+      <meta keywords="gowns, bridal, bridal gowns, wedding bell, wedding, dresses, bridesmaids"> 
       <link rel="stylesheet" href="styles.css">
       <title>Wedding Bell Bridal Salon</title>
 </head>
@@ -22,7 +24,7 @@
                   <h2 id="navigation">Links</h2>
                   <ul class="nav-links">
                         <li><a href="#">Gowns</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#text">Contact</a></li>
                         <li><a href="#">Links</a></li>
                         <li><a href="#">Appointments</a></li>
                   </ul>
@@ -34,127 +36,130 @@
                                     <div id="text">
                                           <h2>Designer Samples</h2>
                                           <p>New designer sample gowns have arrived from premier bridal salons across
-                                                the
-                                                country.
-                                                The
-                                                gowns
-                                                typically retail between $3,000 and $5,000 but at Wedding Bell they are
-                                                offered at
-                                                $1,200
-                                                to
-                                                $2,000. Of course, we do Economically priced sample gowns start at about
-                                                $500.
-                                                <b>Veils & Accessories</b>
-                                                Looking for a veil at the last minute? We have plain edged veils in
-                                                stock.
+                                                the country. The gowns typically retail between $3,000 and $5,000 but at
+                                                Wedding Bell they are offered at $1,200 to $2,000. Of course, we do
+                                                Economically priced sample gowns start at about $500.
+                                                <b>Veils & Accessories</b> Looking for a veil at the last minute? We
+                                                have plain edged veils in stock.
                                           </p>
-
                                           <h2>Wedding Planning</h2>
                                           <p>Don't worry -- we'll plan your perfect wedding. No matter what your style
-                                                or
-                                                budget.
-                                          </p>
+                                                or budget.</p>
                                     </div>
                               </section>
                         </div>
                         <div id="top-right">
                               <img src="bride2.jpg" alt="bride looking at bouquet">
                         </div>
-                  </div>
-                  <hr>
+                  </div> <!-- end of top-container -->
+                  <div id="middle-container">
+                        <h2 class="subtitle">Contact Us</h2>
+                        <div id="middle-flex">
+                              <div id="bride-back">
+                                    <img id="bride-gown" src="bride-back.png" alt="bride in gown walking away">
+                              </div>
+                              <section id="form" aria-label="form">
+                                    <form action="https://www.davidsbridal.com/" method="post">
+                                          <h3>Fill out Form</h3>
+                                          <hr>
+                                          <div class="input">
+                                                <div>
+                                                      <label for="firstname">First Name:
+                                                            <span>*</span></label><br>
+                                                      <input type="text" name="firstname" id="firstname" required
+                                                            aria-required="true">
+                                                </div>
+                                                <div>
+                                                      <label for="lastname">Last Name: <span>*</span></label><br>
+                                                      <input type="text" name="lastname" id="lastname" required
+                                                            aria-required="true">
+                                                </div>
+                                                <div>
+                                                      <label for="emailAddress">Email: <span>*</span></label><br>
+                                                      <input type="email" name="emailAddress" id="emailAddress" required
+                                                            aria-required="true">
+                                                </div>
+                                                <div>
+                                                      <label for="phoneNumber">Phone Number:
+                                                            <span>*</span></label><br>
+                                                      <input type="number" name="phoneNumber" id="phoneNumber" required
+                                                            aria-required="true">
+                                                </div>
+                                          </div>
+                                          <fieldset aria-label="group">
+                                                <legend>How should we contact you?</legend>
+                                                <div>
+                                                      <div>
+                                                            <input type="radio" name="hear" id="email" value="email">
+                                                            <label for="email">Email</label>
+                                                      </div>
+                                                      <div>
+                                                            <input type="radio" name="hear" id="phone" value="phone">
+                                                            <label for="phone">Phone</label>
+                                                      </div>
+                                                      <div>
+                                                            <input type="radio" name="hear" id="noContact"
+                                                                  value="noContact">
+                                                            <label for="noContact">Do not contact</label>
+                                                      </div>
+                                                </div>
+                                          </fieldset>
+                                          <br>
+                                          <p class="star"><span>* indicates required</span></p>
+                                          <div id="buttons">
+                                                <button id="reset" type="reset" aria-label="resetbutton">Reset</button>
+                                                <button id="submit" type="submit"
+                                                      aria-label="submitbutton">Submit</button>
+                                          </div>
+                                    </form>
+                              </section>
+                        </div>
+                  </div> <!-- end of middle-container -->
                   <div id="bottom-container">
-                        <section id="form" aria-label="form">
-                              <form action="https://www.davidsbridal.com/" method="post">
-                                    <h3>Contact us for a consultation today</h3>
-                                    <hr>
-                                    <div class="input">
-                                          <div>
-                                                <label for="firstname">First Name:
-                                                      <span>*</span></label><br>
-                                                <input type="text" name="firstname" id="firstname" required
-                                                      aria-required="true">
-                                          </div>
-                                          <div>
-                                                <label for="lastname">Last Name: <span>*</span></label><br>
-                                                <input type="text" name="lastname" id="lastname" required
-                                                      aria-required="true">
-                                          </div>
-                                          <div>
-                                                <label for="emailAddress">Email: <span>*</span></label><br>
-                                                <input type="email" name="emailAddress" id="emailAddress" required
-                                                      aria-required="true">
-                                          </div>
-                                          <div>
-                                                <label for="phoneNumber">Phone Number:
-                                                      <span>*</span></label><br>
-                                                <input type="number" name="phoneNumber" id="phoneNumber" required
-                                                      aria-required="true">
-                                          </div>
-                                    </div>
-                                    <fieldset aria-label="group">
-                                          <legend>How should we contact you?</legend>
-                                          <div>
-                                                <div>
-                                                      <input type="radio" name="hear" id="email" value="email">
-                                                      <label for="email">Email</label>
-                                                </div>
-                                                <div>
-                                                      <input type="radio" name="hear" id="phone" value="phone">
-                                                      <label for="phone">Phone</label>
-                                                </div>
-                                                <div>
-                                                      <input type="radio" name="hear" id="noContact" value="noContact">
-                                                      <label for="noContact">Do not contact</label>
-                                                </div>
-                                          </div>
-                                    </fieldset>
-                                    <br>
-
-                                    <p class="star"><span>* indicates required</span></p>
-                                    <div id="buttons">
-                                          <button id="reset" type="reset" aria-label="resetbutton">Reset</button>
-                                          <button id="submit" type="submit" aria-label="submitbutton">Submit</button>
-                                    </div>
-                              </form>
-                        </section>
-                        <section id="operation" aria-label="hours">
-                              <table id="table">
-                                    <caption>
-                                          <h3>Hours of Operation:</h3>
-                                    </caption>
-                                    <tr>
-                                          <th scope="row">Monday</th>
-                                          <td class="hours">Closed</td>
-                                    </tr>
-                                    <tr>
-                                          <th scope="row">Tuesday</th>
-                                          <td class="hours">7 am - 8 pm</td>
-                                    </tr>
-                                    <tr>
-                                          <th scope="row">Wednesday - Thursday</th>
-                                          <td class="hours">9 am - 9 pm</td>
-                                    </tr>
-                                    <tr>
-                                          <th scope="row">Friday</th>
-                                          <td class="hours">8 am - 10 pm</td>
-                                    </tr>
-                                    <tr>
-                                          <th scope="row">Saturday</th>
-                                          <td class="hours">7 am - 9 pm</td>
-                                    </tr>
-                                    <tr>
-                                          <th scope="row">Sunday</th>
-                                          <td class="todo">7 am - 5 pm </td>
-                                    </tr>
-                              </table>
-                        </section>
-                  </div>
+                        <h2 class="subtitle">Our Hours</h2>
+                        <div id="bottom-flex">
+                              <section id="operation" aria-label="hours">
+                                    <table id="table">
+                                          <caption>
+                                                <h3>Hours of Operation:</h3>
+                                          </caption>
+                                          <tr>
+                                                <th scope="row">Monday</th>
+                                                <td class="hours">Closed</td>
+                                          </tr>
+                                          <tr>
+                                                <th scope="row">Tuesday</th>
+                                                <td class="hours">7 am - 8 pm</td>
+                                          </tr>
+                                          <tr>
+                                                <th scope="row">Wednesday - Thursday</th>
+                                                <td class="hours">9 am - 9 pm</td>
+                                          </tr>
+                                          <tr>
+                                                <th scope="row">Friday</th>
+                                                <td class="hours">8 am - 10 pm</td>
+                                          </tr>
+                                          <tr>
+                                                <th scope="row">Saturday</th>
+                                                <td class="hours">7 am - 9 pm</td>
+                                          </tr>
+                                          <tr>
+                                                <th scope="row">Sunday</th>
+                                                <td class="todo">7 am - 5 pm </td>
+                                          </tr>
+                                    </table>
+                              </section>
+                              <div id="gowns-section">
+                                    <img id="gowns" src="gowns.jpg" alt="gowns displayed on racks">
+                              </div>
+                        </div>
+                  </div> <!-- end of bottom-container -->
             </main>
             <footer id="footer">
                   Copyright &#169; 2022 <br>
                   Dennis Garbis WEB 210
             </footer>
-      </div>
+      </div> <!-- end of wrapper -->
 </body>
 
 </html>

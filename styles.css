@@ -73,6 +73,7 @@ nav li a {
     text-decoration: none;
     padding: .5rem 1.9rem;
     font-size: 1.1rem;
+    color: black;
 }
 
 nav a:hover {
@@ -94,6 +95,7 @@ nav a:visited {
 #top-container {
     display: flex;
     background-color: #f9f3e7;
+    padding: 2rem;
 }
 
 img {
@@ -109,21 +111,23 @@ h2, h3 {
 #top-left h2 {
     margin-bottom: .6rem;
 }
+
 #text {
-    background-color:white;
+    background-color: rgba(255, 255, 255, 0.597);
 }
+
 #samples {
     display: flex;
     flex-direction: column;
     margin: 1rem auto;
     width: 50%;
     background-image: url(lace.jpg);
-    padding: 1rem 2rem;
+    border: thin solid black;
+    box-shadow: 5px 5px rgba(85, 83, 83, 0.205);
 }
 
 #samples p {
     padding: 1rem;
-
 }
 
 #planning {
@@ -131,17 +135,42 @@ h2, h3 {
     width: 50%;
 }
 
-#bottom-container {
+#middle-container {
+    background-color: #F9EAE7;
+    padding: 2rem;
+}
+
+.subtitle {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 2rem;
+}
+
+#middle-flex {
     display: flex;
     justify-content: space-evenly;
-    background-color:#F9EAE7
+}
+
+#bride-back {
+    width: 50%;
+}
+
+#bride-gown {
+    width: 90%;
+    height: auto;
+    padding: 0%;
+    box-shadow: 5px 5px rgba(85, 83, 83, 0.205);
+}
+
+#form {
+    background-image: url(lace.jpg);
+    width: 20%;
 }
 
 form {
-    background-color: #fff;
-    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.597);
+    padding: .8rem;
     border: thin solid black;
-    margin: 1rem;
+    box-shadow: 5px 5px rgba(85, 83, 83, 0.205);
 }
 
 form hr {
@@ -206,33 +235,57 @@ input:focus {
     cursor: pointer;
 }
 
-#operation {
-    margin: 1rem;
+#bottom-container {
+    background-color: #f9f3e7;
+    padding: 2rem;
 }
 
-#table {
-    border-collapse: collapse;
-    margin: 0 auto 1.2rem auto;
-    background-color: #Fff;
+#bottom-flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#operation {
+    margin: .8rem;
 }
 
 caption {
-    margin-top: .6rem;
     font-weight: bold;
     border: 1px solid black;
     font-size: 18px;
     padding: 10px;
-    background: #Fff;
+    background-color: rgba(255, 255, 255, 0.597);
+    box-shadow: 5px 5px rgba(85, 83, 83, 0.205);
+
+}
+
+table {
+    border-collapse: collapse;
+    background-image: url(lace.jpg);
+    box-shadow: 5px 5px rgba(85, 83, 83, 0.205);
+
 }
 
 td, th {
     border: 1px solid black;
     padding: .6rem .9rem;
     text-align: center;
+    background: rgba(255, 255, 255, 0.597);
 }
 
 .row .hours {
     width: 30%;
+}
+
+#gowns-section {
+    width: 50%;
+}
+
+#gowns {
+    width: 90%;
+    height: auto;
+    padding: 0%;
+    box-shadow: 5px 5px rgba(85, 83, 83, 0.205);
 }
 
 #footer {
@@ -267,7 +320,7 @@ td, th {
 
     #samples {
         width: 90%;
-        margin: 5% auto;
+        margin: 1rem auto;
     }
 
     #planning {
@@ -281,17 +334,30 @@ td, th {
         margin-right: auto;
     }
 
-    #bottom-container {
+    #middle-flex {
         flex-direction: column;
     }
 
-    form {
-        width: 90%;
+    #bride-back {
+        width: 100%;
+        margin-bottom: .8rem;
+    }
+
+    #form {
+        width: 100%;
+    }
+
+    #bottom-flex {
+        flex-direction: column;
     }
 
     #table {
-        border-collapse: collapse;
+        width: 90%;
         margin: auto;
-        width: 90%
+        margin-bottom: .8rem;
+    }
+
+    #gowns-section {
+        width: 100%;
     }
 }
